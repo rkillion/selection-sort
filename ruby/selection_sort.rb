@@ -1,5 +1,12 @@
 def selection_sort(arr)
   # type your code in here
+  sorted = []
+  while arr.length>0
+    min = arr.min
+    sorted<<min
+    arr.slice!(arr.find_index(min))
+  end
+  sorted
 end
 
 if __FILE__ == $PROGRAM_NAME
